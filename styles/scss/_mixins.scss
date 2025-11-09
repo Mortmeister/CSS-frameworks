@@ -1,0 +1,44 @@
+@use "variables" as *;
+
+@mixin button-variant($bg-color) {
+  background-color: $bg-color;
+  color: #fff;
+
+  &:hover {
+    background-color: darken($bg-color, 7%);
+  }
+
+  &:active {
+    background-color: darken($bg-color, 12%);
+  }
+}
+
+@mixin button-focus($focus-color: $primary) {
+  &:focus,
+  &:active {
+    outline: none;
+    box-shadow: 0 0 0 0.25rem rgba($focus-color, 0.25);
+  }
+}
+
+@mixin avatar-size($size) {
+  width: $size;
+  height: $size;
+  object-fit: cover;
+}
+
+@mixin object-cover {
+  object-fit: cover;
+}
+
+@mixin transition($property: all, $duration: 0.2s, $timing: ease-in-out) {
+  transition: $property $duration $timing;
+}
+
+@mixin hover-scale($scale: 1.05) {
+  transition: transform 0.3s ease;
+
+  &:hover {
+    transform: scale($scale);
+  }
+}
