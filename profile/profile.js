@@ -23,7 +23,7 @@ const userPosts = [
   {
     id: 4,
     image:
-      "https://images.unsplash.com/photo-1500648767791-00dcc994a43e?w=150&h=150&fit=crop",
+      "https://images.unsplash.com/photo-1761838816945-021a4ebd67bc?w=800&h=600&fit=crop",
     likes: 156,
     comments: 5,
   },
@@ -37,7 +37,7 @@ const userPosts = [
   {
     id: 6,
     image:
-      "https://images.chesscomfiles.com/uploads/v1/user/9525404.5c271372.200x200o.b689ca97c9c5.jpeg",
+      "https://images.unsplash.com/photo-1499988921418-b7df40ff03f9?&w=800&h=600&fit=crop",
     likes: 287,
     comments: 15,
   },
